@@ -496,6 +496,7 @@ animation-direction: alternate;
   color: #1a1a1b;
   font-size: 17px;
   font-family: "outfit";
+  text-align: center;
 }
 .team1 h5{
   color: white;
@@ -503,7 +504,7 @@ animation-direction: alternate;
   text-align: center;
 }
 .team1 p{
-  font-size: .8rem;
+  font-size: 10px;
   text-align: center;
   margin-top: 25px;
 }

@@ -108,7 +108,7 @@ export default function home() {
               <h2>WELCOME TO</h2>
               <h1>ZODHA RESEARCH</h1>
               <p>
-                Zodha Research: specializes in crafting customized solutions for
+                Zodha Research specializes in crafting customized solutions for
                 a variety of entities like businesses, schools, NGOs, and
                 others. We pay close attention to psychological factors when
                 tackling research challenges. Our experienced team is adept at
@@ -176,7 +176,7 @@ export default function home() {
                 </div>
                 <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
                   <div className={styles.cardcont}>
-                    <h1>Action research programs</h1>
+                    <h1 style={{marginBottom:"12px"}}>Action research programs</h1>
                     <p>
                       Conducting Action research based on the problems faced by
                       the organizations, education institutions, Non-Government
@@ -198,7 +198,7 @@ export default function home() {
                   <div className={styles.cardcont}>
                     <h1>Hands on workshops</h1>
                     <p>
-                      Hands on workshops on Data analysis using IBM SPSS, Stata,
+                    workshops on Data analysis using IBM SPSS, Stata,
                       R etc.
                     </p>
                   </div>
