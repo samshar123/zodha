@@ -26,7 +26,7 @@ export default function footer(){
                     <div className={`col-lg-4 ${styles.iconsfooter}`}>
                         <h1>Head office</h1>
                         <div className={styles.footericons} >
-                        <h5>RISE TBI, Sullamussalam science college, Areekode.<br /> Kerala 676542</h5>
+                        <h5>RISE TBI, Sullamussalam Science College, Areekode.<br /> Kerala 673639</h5>
 
                         </div>
                     
