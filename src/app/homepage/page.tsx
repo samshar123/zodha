@@ -393,7 +393,7 @@ export default function home() {
               <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
                 <div className={styles.team1}>
                   <Image src={team10} className={styles.teamimg} alt="" />
-                  <h3>Namshad</h3>
+                  <h3>NAMSHAD P</h3>
                   <h5>Research Executive</h5>
                   <p>Senior Research Fellow, Pondichery University </p>
                   <div className={styles.teamicon}>

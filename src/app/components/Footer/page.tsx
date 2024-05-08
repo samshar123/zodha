@@ -17,7 +17,7 @@ export default function footer(){
                     <div className={`col-lg-4 ${styles.iconsfooter}`}>
                         <h1>Social media</h1>
                         <div className={styles.footericons} >
-                        <FaSquareInstagram className={styles.footericon} />   <FaFacebookSquare className={styles.footericon} /> <FaLinkedin className={styles.footericon} />
+                        <a href="https://www.instagram.com/zodha_research?igsh=MWM5NGRyNHE5eGpxcQ%3D%3D&utm_source=qr"><FaSquareInstagram className={styles.footericon} /></a>   <FaFacebookSquare className={styles.footericon} /> <FaLinkedin className={styles.footericon} />
 
                         </div>
                     
