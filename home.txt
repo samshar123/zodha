@@ -1,0 +1,1645 @@
+page,tsx
+
+"use client";
+
+// Import useState from 'react' library
+import { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import styles from "../homepage/home.module.css";
+import Image from "next/image";
+import robo from "../../../public/robo.png";
+import img2 from "../../../public/img2.png";
+import { IoIosArrowDropright } from "react-icons/io";
+import Link from "next/link";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import robo2 from "../../../public/robo2.png";
+import Sparkles from "react-sparkle";
+import crs1 from "../../../public/course1.png";
+import crs2 from "../../../public/course2.png";
+import crs3 from "../../../public/course3.png";
+import robo3 from "../../../public/robo3.png";
+import team1 from "../../../public/team2.png";
+import { FaInstagramSquare } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
+import {
+  CForm,
+  CCol,
+  CFormInput,
+  CFormSelect,
+  CFormCheck,
+  CButton,
+  CFormTextarea,
+} from "@coreui/react";
+import "../../app/globals.css";
+import Navbar from "../components/Navbar/page";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { BsArrowUpSquareFill } from "react-icons/bs";
+import { TbBulb } from "react-icons/tb";
+import { IoIosPaper } from "react-icons/io";
+import { IoSearchSharp } from "react-icons/io5";
+import { TbTargetArrow } from "react-icons/tb";
+import { GiProgression } from "react-icons/gi";
+import { PiMedal } from "react-icons/pi";
+import teammember1 from "../../../public/SAMZ.jpg";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { BiLogoLinkedinSquare } from "react-icons/bi";
+import team2 from "../../../public/suhail.jpg";
+import team3 from "../../../public/niyas.jpg";
+import team4 from "../../../public/isra.jpg";
+import team5 from "../../../public/amila.jpg";
+import team6 from "../../../public/mubarak.jpg";
+import team7 from "../../../public/yusaf.jpg";
+import team8 from "../../../public/irshad.jpg";
+import team9 from "../../../public/ali.jpg";
+import team10 from "../../../public/team10.jpg";
+import team11 from "../../../public/team11.jpg";
+
+<<<<<<< HEAD:src/app/Home/page.tsx
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction(): void {
+  const scrollUpLink = document.getElementById("scrollUpLink");
+  if (scrollUpLink !== null) {
+    if (
+      document.body.scrollTop > 500 ||
+      document.documentElement.scrollTop > 500
+    ) {
+      scrollUpLink.style.display = "block";
+    } else {
+      scrollUpLink.style.display = "none";
+    }
+  }
+}
+
+export default function home() {
+  return (
+    <section id={styles.homemain}>
+      <Sparkles
+        color="green"
+        count={20}
+        minSize={4}
+        maxSize={12}
+        overflowPx={0}
+        fadeOutSpeed={5}
+        flicker={false}
+      />
+
+      <Link href={"#home"}>
+        <FaSquareWhatsapp className={styles.whatslogo} />{" "}
+      </Link>
+      <Link href={"#home"} id="scrollUpLink" style={{ display: "none" }}>
+        <BsArrowUpSquareFill className={styles.upicon} />
+      </Link>
+
+      <section id="home" className={styles.home}>
+        <TbBulb className={styles.icon1} />
+        <IoIosPaper className={styles.icon2} />
+        <IoSearchSharp className={styles.icon3} />
+        <TbTargetArrow className={styles.icon4} />
+        <GiProgression className={styles.icon5} />
+        <PiMedal className={styles.icon6} />
+
+        <div className={styles.mainlogodiv}>
+          <Image className={styles.mainlogo} src={img2} alt="" />
+          <h5>
+            empowers organizations and individuals with innovative,
+            research-driven solutions tailored to address complex challenges.
+            Discover actionable insights and achieve sustainable growth with our
+            precision and expertise.
+          </h5>
+
+          <a href="https://www.google.com">
+            {" "}
+            <a href="#about">  <button>
+              About us
+              <FaLongArrowAltRight />
+            </button></a>
+          
+          </a>
+        </div>
+      </section>
+      <section id="about">
+        <div id={styles.abouthome}>
+          <div className={styles.aboutcont}>
+            <div className="container">
+              <h2>WELCOME TO</h2>
+              <h1>ZODHA RESEARCH</h1>
+=======
+export default function home() {
+  return (
+    <section id={styles.home}>
+      <Link href={"#home"}>
+        <FaSquareWhatsapp className={styles.whatslogo} />{" "}
+      </Link>
+      <Link href={"#home"} id="scrollUpLink" style={{ display: "none" }}>
+        <BsArrowUpSquareFill className={styles.upicon} />
+      </Link>
+
+      <section id="home1">
+      <div className="container">
+        <Sparkles
+          color="orange"
+          count={20}
+          minSize={4}
+          maxSize={12}
+          overflowPx={0}
+          fadeOutSpeed={5}
+          flicker={false}
+        />
+        
+        <div className="row">
+          <div className={`col-lg-8 ${styles.homecont}`}>
+            <div className={styles.newmov}>
+              <div className={styles.newsmore}>
+                <h5>Know more</h5>
+              </div>
+              <div className={styles.newscont}>
+                <h5>Picamp starts on my 6 2024</h5>
+              </div>
+            </div>
+            <div className={styles.homehead}>
+              <h1>
+                Start your Robotics / AI <br /> Journey from Pibots Academy
+              </h1>
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/page.tsx
+              <p>
+                Zodha Research: specializes in crafting customized solutions for
+                a variety of entities like businesses, schools, NGOs, and
+                others. We pay close attention to psychological factors when
+                tackling research challenges. Our experienced team is adept at
+                problem-solving and uses creative methods to achieve measurable
+                outcomes. We prioritize accuracy and creativity to provide
+                practical insights that foster growth and long-term success.
+                Committed to high standards and honesty, we work closely with
+                clients to develop effective strategies together.
+              </p>
+              <a href="#service"> <div>
+                <h6>
+                  Our Services <FaLongArrowAltRight className={styles.arrow2} />{" "}
+                </h6>
+              </div></a>
+             
+            </div>
+<<<<<<< HEAD:src/app/Home/page.tsx
+            <GiProgression className={styles.roboimg2} />
+          </div>
+        </div>
+      </section>
+
+      <section id="service">
+        <div id={styles.coursehome}>
+          <div className={styles.aboutcont}>
+            <div className="container">
+              <h2>Services</h2>
+              <h5 className={styles.coursesub}>Our featured Services</h5>
+              <br />
+              <br />
+              <div className="row">
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1 style={{ marginBottom: "10px" }}>
+                      Academic/Research sessions
+                    </h1>
+                    <ul>
+                      <li>Research methodology & Data analysis</li>
+                      <li>Article writing & Publishing</li>
+                      <li>Primary & Secondary data analysis</li>
+                      <li>
+                        Referencing style management & Writing tools workshops
+                      </li>
+                      <li>Higher education and PhD orientation programs</li>
+                      <li>Academic project writing for UG & PG students</li>
+                    </ul>
+                  </div>
+=======
+            <div>
+              <a href="#about1">
+                <div className={styles.abtbtn}>
+                  <h5>About us</h5>
+                  <IoIosArrowDropright className={styles.btnicon} />
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/page.tsx
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Assistance Services</h1>
+                    <ul>
+                      <li>
+                        Primary data analysis for projects and Dissertations
+                      </li>
+                      <li>
+                        Secondary data analysis for projects and dissertations{" "}
+                      </li>
+                      <li>Econometric analysis for finance</li>
+                      <li>Article writing and publishing</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Action research programs</h1>
+                    <p>
+                      Conducting Action research based on the problems faced by
+                      the organizations, education institutions, Non-Government
+                      Organizations (NGOs), Government local bodies etc., to
+                      solve specific problems or improve practices through
+                      collaborative inquiry and action.
+                    </p>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Training programs</h1>
+                    <p>
+                      Training on stock market trading & investment practices
+                    </p>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Hands on workshops</h1>
+                    <p>
+                      Hands on workshops on Data analysis using IBM SPSS, Stata,
+                      R etc.
+                    </p>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Psychological Assessments</h1>
+                    <p>
+                      Gain insights into individual and group dynamics to
+                      identify strengths and areas for improvement.
+                    </p>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Customized Training and Workshops</h1>
+                    <p>
+                      Develop skills and foster growth through tailored programs
+                      designed for your organization's unique requirements.{" "}
+                    </p>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Organizational Development </h1>
+                    <p>
+                      Cultivate a positive work or learning environment with
+                      guidance on leadership, culture, team dynamics, and
+                      motivation.{" "}
+                    </p>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Policy Development </h1>
+                    <p>
+                      Create inclusive policies to support all members of your
+                      organization.{" "}
+                    </p>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Consultation Services </h1>
+                    <p>
+                      Address specific challenges in mental health, employee
+                      relations, or organizational development through expert
+                      guidance.{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <TbTargetArrow className={styles.roboimg3} />
+          </div>
+<<<<<<< HEAD:src/app/Home/page.tsx
+        </div>
+      </section>
+
+      <section id="team">
+        <div id={styles.teamhome}>
+          <div className={styles.teamhead}>
+            <h2>Team</h2>
+            <h5 className={styles.coursesub}>Our Backend</h5>
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team2} className={styles.teamimg} alt="" />
+                  <h3>Dr.SUHAIL PULPARAMBIL</h3>
+                  <h5>Director of Research</h5>
+                  <p>
+                    Assistant Proffesor on contract,Sullamussalam Science
+                    College
+                  </p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team3} className={styles.teamimg} alt="" />
+                  <h3>NIYAS N</h3>
+                  <h5>Director of Research</h5>
+                  <p>Senior Research Fellow, Pondichery University </p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team4} className={styles.teamimg} alt="" />
+                  <h3>FATHIMA ISRA</h3>
+                  <h5>Head, Behavioral Research</h5>
+                  <p>CEO,Kindled Psychology Services </p>
+
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team5} className={styles.teamimg} alt="" />
+                  <h3>AMILA ANJUM</h3>
+                  <h5>Chief Psychologist, Research and Development</h5>
+                  <p>HR Operations Manager, RISE-TBI</p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team11} className={styles.teamimg} alt="" />
+                  <h3>ABIDA ABDULLA</h3>
+                  <h5>Project Manager</h5>
+                  <p>
+                    {" "}
+                    Assistant Proffesor on contract,Sullamussalam Science
+                    College
+                  </p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team6} className={styles.teamimg} alt="" />
+                  <h3>Dr.MUBARAK RAHMAN</h3>
+                  <h5> Senior Researcher</h5>
+                  <p>Assistant Proffesor,LEAD College Palakkad</p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team7} className={styles.teamimg} alt="" />
+                  <h3>YUSAF HARUN K</h3>
+                  <h5>Senior Researcher</h5>
+                  <p>Assistant Proffesor,Kalasalingam University</p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team8} className={styles.teamimg} alt="" />
+                  <h3>Dr.MUHAMMED IRSHAD VK</h3>
+                  <h5>Senior Researcher</h5>
+                  <p>Assistant Proffesor,LEAD College Palakkad</p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team9} className={styles.teamimg} alt="" />
+                  <h3>MOHAMED ALI KUNIPARAMBIL</h3>
+                  <h5>Executive Member</h5>
+                  <p>Senior Research Fellow, Pondichery University </p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={team10} className={styles.teamimg} alt="" />
+                  <h3>Namshad</h3>
+                  <h5>Research executive</h5>
+                  <p>Senior Research Fellow, Pondichery University </p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+
+              {/* <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+              <div className={styles.team1}>
+                <Image src={team5} className={styles.teamimg} alt="" />
+                <h3>Full Name</h3>
+                <h5>Designation</h5>
+                <div className={styles.teamicon}>
+                  <FaSquareFacebook className={styles.iconteam} />
+                  <BiLogoLinkedinSquare className={styles.iconteam} />
+                  <FaSquareInstagram className={styles.iconteam} />
+                </div>
+              </div>
+            </div>
+            <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+              <div className={styles.team1}>
+                <Image src={team5} className={styles.teamimg} alt="" />
+                <h3>Full Name</h3>
+                <h5>Designation</h5>
+                <div className={styles.teamicon}>
+                  <FaSquareFacebook className={styles.iconteam} />
+                  <BiLogoLinkedinSquare className={styles.iconteam} />
+                  <FaSquareInstagram className={styles.iconteam} />
+                </div>
+              </div>
+            </div>
+            <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+              <div className={styles.team1}>
+                <Image src={team5} className={styles.teamimg} alt="" />
+                <h3>Full Name</h3>
+                <h5>Designation</h5>
+                <div className={styles.teamicon}>
+                  <FaSquareFacebook className={styles.iconteam} />
+                  <BiLogoLinkedinSquare className={styles.iconteam} />
+                  <FaSquareInstagram className={styles.iconteam} />
+                </div>
+=======
+        </div>  
+      </div>
+
+      </section>
+
+    
+    <section id="about1">
+    <div id={styles.abouthome}>
+        <div className={styles.aboutcont}>
+          <div className="container">
+            <h2>WELCOME TO</h2>
+            <h1>PiBOTS ACADEMY</h1>
+            <p>
+              PiBots Academy: Igniting Innovation for All. We offer dynamic
+              programs, expert mentorship, and hands-on experiences to inspire
+              creativity and curiosity in learners of all ages. Join us and
+              unleash your potential in the world of cutting-edge technology and
+              innovation!
+            </p>
+
+
+            <div>
+              <a href="#course">
+              <h6>
+                Course <FaLongArrowAltRight className={styles.arrow2} />{" "}
+              </h6>
+
+              </a>
+            
+            </div>
+          </div>
+          <Image alt="home image" className={styles.roboimg2} src={robo2} />
+        </div>
+      </div>
+
+    </section>
+
+   
+      <section id="course">
+        <div id={styles.coursehome}>
+          <div className={styles.aboutcont}>
+            <div className="container">
+              <h2>Courses</h2>
+              <h5 className={styles.coursesub}>Our featured Courses</h5>
+              <br />
+              <br />
+              <div className="row">
+                <div className={` col-lg-4 col-12 ${styles.coursecard}`}>
+                  <Image className={styles.crsimg} src={crs1} alt="" />
+                </div>
+                <div className={` col-lg-4 col-12 ${styles.coursecard}`}>
+                  <Image className={styles.crsimg} src={crs2} alt="" />
+                </div>
+                <div className={` col-lg-4 col-12 ${styles.coursecard}`}>
+                  <Image className={styles.crsimg} src={crs3} alt="" />
+                </div>
+              </div>
+
+              <div style={{ paddingTop: "4rem" }}>
+                <a href="#gallery1">
+                <h6>
+                  Happy moments{" "}
+                  <FaLongArrowAltRight className={styles.arrow2} />{" "}
+                </h6>
+
+                </a>
+              
+              </div>
+            </div>
+            <Image alt="home image" className={styles.roboimg3} src={robo3} />
+          </div>
+        </div>
+      </section>
+
+
+      <section id="gallery1">
+      <div id={styles.galleryhome}>
+        <div className="container">
+          <div className={styles.galleryhead}>
+            <h2>Gallery</h2>
+            <h5 className={styles.coursesub}>Our Valuable moments</h5>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <div className={styles.imgcard}>
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                  className="w-100 shadow-1-strong rounded "
+                  alt="Boat on Calm Water"
+                />
+              </div>
+
+              <div className={styles.imgcard}>
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                  className="w-100 shadow-1-strong rounded "
+                  alt="Wintry Mountain Landscape"
+                />
+              </div>
+            </div>
+
+            <div className="col-lg-4 mb-4 mb-lg-0">
+              <div className={styles.imgcard}>
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                  className="w-100 shadow-1-strong rounded "
+                  alt="Mountains in the Clouds"
+                />
+              </div>
+
+              <div className={styles.imgcard}>
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                  className="w-100 shadow-1-strong rounded "
+                  alt="Boat on Calm Water"
+                />
+              </div>
+            </div>
+
+            <div className="col-lg-4 mb-4 mb-lg-0">
+              <div className={styles.imgcard}>
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                  className="w-100 shadow-1-strong rounded "
+                  alt="Waves at Sea"
+                />
+              </div>
+
+              <div className={styles.imgcard}>
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                  className="w-100 shadow-1-strong rounded "
+                  alt="Yosemite National Park"
+                />
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/page.tsx
+              </div>
+            </div> */}
+            </div>
+          </div>
+        </div>
+<<<<<<< HEAD:src/app/Home/page.tsx
+      </section>
+
+      <section id="contact">
+        
+      <div id={styles.contact}>
+=======
+      </div>
+
+      </section>
+
+     
+     <section id="team1">
+
+     <div id={styles.teamhome}>
+        <div className={styles.teamhead}>
+          <h2>Team</h2>
+          <h5 className={styles.coursesub}>Our Backend</h5>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+              <div className={styles.member}>
+                <h3>Designation</h3>
+                <h5>
+                  <a href="http://">
+                    <FaInstagramSquare />
+                  </a>
+                  <a href="http://">
+                    <IoLogoLinkedin />
+                  </a>
+                </h5>
+                <Image
+                  src={team1}
+                  className={styles.teamimg}
+                  alt="team member"
+                />
+              </div>
+              <h2>Full name </h2>
+            </div>
+            <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+              <div className={styles.member}>
+                <h3>Designation</h3>
+                <h5>
+                  <a href="http://">
+                    <FaInstagramSquare />
+                  </a>
+                  <a href="http://">
+                    <IoLogoLinkedin />
+                  </a>
+                </h5>
+                <Image
+                  src={team1}
+                  className={styles.teamimg}
+                  alt="team member"
+                />
+              </div>
+              <h2>Full name </h2>
+            </div>
+            <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+              <div className={styles.member}>
+                <h3>Designation</h3>
+                <h5>
+                  <a href="http://">
+                    <FaInstagramSquare />
+                  </a>
+                  <a href="http://">
+                    <IoLogoLinkedin />
+                  </a>
+                </h5>
+                <Image
+                  src={team1}
+                  className={styles.teamimg}
+                  alt="team member"
+                />
+              </div>
+              <h2>Full name </h2>
+            </div>
+            <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+              <div className={styles.member}>
+                <h3>Designation</h3>
+                <h5>
+                  <a href="http://">
+                    <FaInstagramSquare />
+                  </a>
+                  <a href="http://">
+                    <IoLogoLinkedin />
+                  </a>
+                </h5>
+                <Image
+                  src={team1}
+                  className={styles.teamimg}
+                  alt="team member"
+                />
+              </div>
+              <h2>Full name </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     </section>
+
+
+<section id="contact1">
+<div id={styles.contact}>
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/page.tsx
+        <div className={styles.teamhead}>
+          <h2>contact Us</h2>
+          <h5 className={styles.coursesub}>Reach us</h5>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className={`col-lg-4 col-12 ${styles.conticon}`}>
+              <div className={styles.conticon1}>
+                <div className={styles.iconcont}>
+                  <h1>
+                    <MdEmail className={styles.icon} />
+                  </h1>
+                </div>
+                <div className={styles.continfo}>
+                  <h2>Email</h2>
+<<<<<<< HEAD:src/app/Home/page.tsx
+                  <p>mail@zodharesearch.com</p>
+=======
+                  <p>mail@pibots.in</p>
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/page.tsx
+                </div>
+              </div>
+              <div className={styles.conticon1}>
+                <div className={styles.iconcont}>
+                  <h1>
+                    <FaPhoneAlt className={styles.icon} />
+                  </h1>
+                </div>
+                <div className={styles.continfo}>
+                  <h2>Call</h2>
+<<<<<<< HEAD:src/app/Home/page.tsx
+                  <p>+91 9074305205</p>
+=======
+                  <p>+91 9188411223</p>
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/page.tsx
+                </div>
+              </div>
+              <div className={styles.conticon1}>
+                <div className={styles.iconcont}>
+                  <h1>
+                    <IoLocationSharp className={styles.icon} />
+                  </h1>
+                </div>
+                <div className={styles.continfo}>
+                  <h2>Location</h2>
+                  <p>Areekode , Malappuram</p>
+                </div>
+              </div>
+            </div>
+            <div className={`col-lg-8 col-12 ${styles.contform}`}>
+              <CForm
+<<<<<<< HEAD:src/app/Home/page.tsx
+                action="https://formspree.io/f/mnqewyvz"
+=======
+                action="https://formspree.io/f/xbjerael"
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/page.tsx
+                method="POST"
+                className="row g-3"
+              >
+                <CCol md={6}>
+                  <CFormInput
+                    className={styles.label}
+                    name="name"
+                    label="Name"
+                    type="text"
+                    id="inputEmail4"
+                    placeholder="Your Name"
+                  />
+                </CCol>
+                <CCol md={6}>
+                  <CFormInput
+                    name="email"
+                    label="Email"
+                    type="email"
+                    id="inputEmail4"
+                    placeholder="Your Email"
+                  />
+                </CCol>
+                <CCol xs={12}>
+                  <CFormInput
+                    name="subject"
+                    label="Subject"
+                    type="text"
+                    id="inputMessage"
+                    placeholder="your subject here"
+                  />
+                </CCol>
+                <CCol xs={12}>
+                  <CFormTextarea
+                    name="message"
+                    id="floatingTextarea"
+                    label="Message"
+                    placeholder="Your message"
+                  ></CFormTextarea>
+                </CCol>
+
+                <CCol
+                  xs={12}
+                  style={{ display: "flex", justifyContent: "end" }}
+                >
+                  <CButton
+<<<<<<< HEAD:src/app/Home/page.tsx
+                    style={{ backgroundColor: "transparent", color: "#71b244" }}
+=======
+                    style={{ backgroundColor: "transparent", color: "#ff6a00" }}
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/page.tsx
+                    type="submit"
+                  >
+                    Send <FaLongArrowAltRight className={styles.arrow2} />{" "}
+                  </CButton>
+                </CCol>
+              </CForm>
+            </div>
+          </div>
+        </div>
+      </div>
+<<<<<<< HEAD:src/app/Home/page.tsx
+      </section>
+
+=======
+
+</section>
+     
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/page.tsx
+    </section>
+  );
+}
+
+
+
+home.module.css
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+#homemain{
+    
+    width: 100%;
+   
+    background-color: #1a1a1b;
+   
+    position: relative;
+   
+  
+}
+.home{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1a1a1b;
+
+}
+
+.whatslogo{
+  width: 50px;
+  height: 50px;
+  color: #71b244;
+  position: fixed;
+  z-index: 999999;
+  bottom: 10px;
+  right: 10px;
+  transition: 1s ease-in-out;
+}
+.upicon{
+  width: 45px;
+  height: 45px;
+  color: #71b244;
+  position: fixed;
+  z-index: 999999;
+  bottom: 70px;
+  right: 13px;
+  transition: 1s ease-in-out;
+
+}
+.whatslogo:hover{
+color: #5a8e35;
+transition: 1s ease-in-out;
+
+}
+.upicon:hover{
+  color: white;
+  transition: 1s ease-in-out;
+}
+
+
+
+/* news movement div */
+.home{
+  position: relative;
+  width: 100%;
+}
+.mainlogodiv{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0px 10px;
+
+}
+ .mainlogo{
+  width: 500px;
+  margin: auto;
+  height: auto;
+  margin-bottom: 30px;
+ 
+}
+.mainlogodiv h5{
+  font-family: "poppins";
+  color: #71b244;
+}
+.mainlogodiv button{
+  background-color: #71b244;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  margin-top: 100px;
+
+}
+<<<<<<< HEAD:src/app/Home/home.module.css
+.mainlogodiv button:hover{
+  background-color: #1a1a1b;
+=======
+.homehead p{
+    font-size: 1.2rem;
+    font-family: "lato";
+    color: white;
+    
+}
+.homecont a{
+    text-decoration: none;
+}
+.abtbtn{
+    width: 170px;
+    background-color: #ff6a00;
+    color: white;
+    border-radius: 30px;
+    padding: 1px;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom:5px;
+    
+
+} 
+.abtbtn h5{
+    color: white;
+    margin-top: 3px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "lato";
+}
+.btnicon{
+    color: white;
+    margin-right: 10px;
+    font-size:1.4rem ;
+}
+.imghome{
+    position: relative;
+    background-color: #1a1a1b;
+    
+}
+
+.homeimg{
+    width: 350px;
+    height: 350px;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50% -50%);
+    
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/home.module.css
+}
+
+.home .icon1{
+  color: white;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 22%;
+  left: 12%;
+  animation: upDownAnimation;
+  animation-duration: 4s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon2{
+  color: white;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 30%;
+  right: 12%;
+  animation: upDownAnimation;
+  animation-duration: 6s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon3{
+  color: #71b244;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  animation: upDownAnimation;
+  animation-duration: 5s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon4{
+  color: white;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  animation: upDownAnimation;
+  animation-duration: 5s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon5{
+  color: #71b244;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  animation: upDownAnimation;
+  animation-duration: 4s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon6{
+  color: #71b244;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  animation: upDownAnimation;
+  animation-duration: 3s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+@media (max-width:768px) 
+{
+  .mainlogo{
+    width: 80%;
+  }
+  .mainlogodiv{
+   width: 100%;
+    top: 50%;
+
+  }
+  .home .icon1{
+    width: 25px;
+    height: 25px;
+   
+  }
+  .home .icon2{
+    width: 25px;
+    height: 25px;
+    right: 2%;
+   
+  }
+  .home .icon3{
+    width: 25px;
+    height: 25px;
+   
+  }
+  .home .icon4{
+    width: 25px;
+    height: 25px;
+   
+  }
+  .home .icon5{
+    width: 25px;
+    height: 25px;
+   
+  }
+  .home .icon6{
+    width: 25px;
+    height: 25px;
+    
+   
+  }
+  .mainlogodiv h5{
+    font-size: 1rem;
+    font-family: "lato";
+    text-align: center;
+  }
+  
+}
+@media (max-width:768px) {
+  .homeimg{
+    left: 30PX;
+
+<<<<<<< HEAD:src/app/Home/home.module.css
+
+
+
+
+
+=======
+  }
+  .imghome{
+   height: 40vh;
+   
+   
+  }
+  #home{
+   padding-top: 7rem;
+  }
+  /* #home{
+   margin-bottom: 5rem;
+  } */
+  
+}
+.roboimg{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 999;
+    top: -30%;
+    right: 15%;
+    animation: upDownAnimation;
+    animation-duration: 3s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+>>>>>>> 2b3916998a954622fd67704fd9cc09dbc52c925d:src/app/homepage/home.module.css
+
+@keyframes upDownAnimation {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px); /* Adjust the value as needed */
+    }
+  }
+
+
+  /* about area lap screen starts here */
+
+  #abouthome{
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    
+    background-color:#1a1a1b;
+  }
+
+  .aboutcont{
+    text-align: center;
+    padding-bottom: 2rem;
+    position: relative;
+    
+  }
+
+  .aboutcont h2{
+    font-family: "lato";
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  .aboutcont h1{
+    font-size: 3rem;
+    font-family: "lato";
+    color: #71b244;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  .aboutcont p{
+    margin: 10px 10rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "lato";
+    margin-bottom: 6rem;
+  }
+  @media (max-width:768px) {
+    .aboutcont p{
+        margin: 4rem 1rem;
+    }
+    .aboutcont p{
+      text-align: justify;
+    }
+    
+  }
+  .aboutcont h6{
+    color: #71b244;
+    font-family: "lato";
+    font-size: 1.2rem;
+    transition: 1s ease-in-out;
+    
+  }
+  .arrow2{
+    font-size: 1.4rem;
+    transition: 1s ease-in-out;
+  }
+ 
+  .aboutcont h6:hover .arrow2{
+    color: white;
+    font-family: "lato";
+   transform: translateX(50px);
+   transition: 1s ease-in-out;
+    
+  }
+  .aboutcont h6:hover{
+    color: white;
+    transform: translateX(-10px);
+    transition: 1s ease-in-out;
+   
+  }
+
+  .roboimg2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+   left: 0;
+   color: #71b244;
+   margin-left: 20px;
+   animation: upDownAnimation;
+   animation-duration: 3s;
+   animation-iteration-count:infinite;
+   animation-direction: alternate;
+   
+}
+
+/* course home stars here */
+
+#coursehome{
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    
+    background-color:#1a1a1b;
+  }
+
+ 
+  .coursecard{
+    /* background-color: #ff6a00; */
+   
+    width: 33%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    
+  
+
+  }
+  .coursecard p{
+    margin: 0px 0px;
+    font-size: 1.2rem;
+  }
+  .coursecard li{
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .cardcont{
+    background-color: #71b244;
+    width: 90%;
+    height: 350px;
+    transition: 1s ease-in-out;
+    padding: 10px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+  
+  } 
+  .cardcont:hover{
+  
+    background-color: white;
+    transition: 1s ease-in-out;
+  
+
+  }
+  .cardcont:hover h1{
+    color: #71b244;
+    transition: .5s ease-in-out;
+  
+  }
+  .cardcont:hover li{
+    color: #71b244;
+  }
+  .cardcont:hover p{
+    color: #71b244;
+    transition: .5s ease-in-out;
+  
+  }
+  .cardcont h1{
+    font-family: "roboto";
+    font-size: 2rem;
+  }
+  .cardcont h1{
+    color: white;
+  }
+  
+  
+
+  .coursesub{
+    color:#71b244;
+    font-family: "lato";
+    font-size: 1.2rem;
+    transition: 1s ease-in-out;
+   
+  }
+
+  .roboimg3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    animation: upDownAnimation;
+    animation-duration: 3s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+   
+}
+@media (max-width:800px) {
+  
+  .coursecard p{
+    font-size: 1rem;
+  }
+  .cardcont h1{
+    font-size: 1.5rem;
+  }
+}
+/* gallery starts here */
+
+
+/* team starts from here */
+#teamhome{
+  overflow:hidden;
+}
+
+.teamcard{
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+
+
+}
+.team1{
+  background-color: #71b244;
+  width: 90%;
+  height: 320px;
+  transition: 1s ease-in-out;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+ overflow: hidden;
+
+}
+
+.team1:hover .teamimg{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  border: 2px solid white;
+  margin-bottom: 25px;
+}
+.teamimg{
+  width: 200px;
+  height: 200px;
+  border-radius:10px;
+  border: 2px solid white;
+  margin-bottom: 25px;
+  transition: 1s ease-in-out;
+  object-fit: cover;
+}
+.teamicon{
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.iconteam{
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.team1 h3{
+  color: #1a1a1b;
+  font-size: 18px;
+  font-family: "poppins";
+}
+.team1 h5{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.team1 p{
+  font-size: .8rem;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.member{
+  background-color: #ff6a00;
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 2rem;
+ 
+  
+}
+
+
+
+.member a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.member:hover .teamimg{
+ height: 320px;
+ transition: .5s ease-in-out;
+
+}
+.member:hover h3{
+
+  transform: translateY(-50%);
+  transition: 1s ease-in-out;
+}
+
+.member:hover h5{
+ 
+  
+  transition: .8s ease-in-out;
+  color:white;
+  z-index: 1;
+}
+
+.teamhead{
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+}
+.teamhead h2{
+  font-family: "lato";
+  font-size: 2rem;
+  color: white;
+  
+}
+@media (max-width:768px) {
+  #teamhome{
+    overflow:hidden;
+  }
+  .teamcard{
+    padding-bottom: 5rem;
+  }
+  #home{
+    overflow: hidden;
+  }
+  .member{
+    margin-bottom: 1rem;
+  }
+  .coursecard{
+    width: 100%;
+
+  }
+  
+}
+
+
+/* contact starts here */
+
+
+#contact{
+  padding-bottom: 3rem;
+
+}
+
+.conticon{
+  width: 33%;
+  padding-bottom: 3rem;
+
+}
+.conticon1{
+  display: flex;
+  padding-bottom: 2rem;
+}
+.iconcont{
+  background-color: #71b244;
+  text-align: center;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.conticon1 .icon{
+  color: #1a1a1b;
+}
+.continfo{
+  height: 50px;
+  margin-left: 10px;
+  
+  
+}
+.continfo h2{
+  color: white;
+  margin-bottom: 0;
+  font-family: "lato";
+
+}
+.continfo p{
+  margin-top: 0;
+  color: white;
+  font-family: "lato";
+}
+
+
+
+.contform label{
+  color: white;
+}
+.form-control{
+  color: #71b244;
+}
+
+
+
+@media (max-width:768px) {
+  .newmov{
+    width: 90%;
+  }
+  .conticon{
+    width: 100%;
+  }
+  .newsmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .newsmore h5{
+    margin-top: 0px;
+  }
+  .newscont h5{
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .homehead{
+    padding-top: 2rem;
+  padding-bottom: 2rem;
+  }
+  .homecont{
+    margin-bottom: 180px;
+  }
+  .homecircle{
+    width: 250px;
+    height: 250px;
+  }
+}

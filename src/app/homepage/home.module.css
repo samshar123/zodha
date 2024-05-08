@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+#homemain{
+    
+    width: 100%;
+   
+    background-color: #1a1a1b;
+   
+    position: relative;
+   
+  
+}
+.home{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1a1a1b;
+
+}
+
+.whatslogo{
+  width: 50px;
+  height: 50px;
+  color: #71b244;
+  position: fixed;
+  z-index: 999999;
+  bottom: 10px;
+  right: 10px;
+  transition: 1s ease-in-out;
+}
+.upicon{
+  width: 45px;
+  height: 45px;
+  color: #71b244;
+  position: fixed;
+  z-index: 999999;
+  bottom: 70px;
+  right: 13px;
+  transition: 1s ease-in-out;
+
+}
+.whatslogo:hover{
+color: #5a8e35;
+transition: 1s ease-in-out;
+
+}
+.upicon:hover{
+  color: white;
+  transition: 1s ease-in-out;
+}
+
+
+
+/* news movement div */
+.home{
+  position: relative;
+  width: 100%;
+}
+.mainlogodiv{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0px 10px;
+
+}
+ .mainlogo{
+  width: 500px;
+  margin: auto;
+  height: auto;
+  margin-bottom: 30px;
+ 
+}
+.mainlogodiv h5{
+  font-family: "poppins";
+  color: #71b244;
+}
+.mainlogodiv button{
+  background-color: #71b244;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  margin-top: 100px;
+
+}
+.mainlogodiv button:hover{
+  background-color: #1a1a1b;
+}
+
+.home .icon1{
+  color: white;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 22%;
+  left: 12%;
+  animation: upDownAnimation;
+  animation-duration: 4s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon2{
+  color: white;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 30%;
+  right: 12%;
+  animation: upDownAnimation;
+  animation-duration: 6s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon3{
+  color: #71b244;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  animation: upDownAnimation;
+  animation-duration: 5s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon4{
+  color: white;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  animation: upDownAnimation;
+  animation-duration: 5s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon5{
+  color: #71b244;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  animation: upDownAnimation;
+  animation-duration: 4s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+.home .icon6{
+  color: #71b244;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  animation: upDownAnimation;
+  animation-duration: 3s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
+@media (max-width:768px) 
+{
+  .mainlogo{
+    width: 80%;
+  }
+  .mainlogodiv{
+   width: 100%;
+    top: 50%;
+
+  }
+  .home .icon1{
+    width: 25px;
+    height: 25px;
+   
+  }
+  .home .icon2{
+    width: 25px;
+    height: 25px;
+    right: 2%;
+   
+  }
+  .home .icon3{
+    width: 25px;
+    height: 25px;
+   
+  }
+  .home .icon4{
+    width: 25px;
+    height: 25px;
+   
+  }
+  .home .icon5{
+    width: 25px;
+    height: 25px;
+   
+  }
+  .home .icon6{
+    width: 25px;
+    height: 25px;
+    
+   
+  }
+  .mainlogodiv h5{
+    font-size: 1rem;
+    font-family: "lato";
+    text-align: center;
+  }
+  
+}
+@media (max-width:768px) {
+  .homeimg{
+    left: 30PX;
+
+  }
+
+
+}
+
+
+@keyframes upDownAnimation {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px); /* Adjust the value as needed */
+    }
+  }
+
+
+  /* about area lap screen starts here */
+
+  #abouthome{
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    
+    background-color:#1a1a1b;
+  }
+
+  .aboutcont{
+    text-align: center;
+    padding-bottom: 2rem;
+    position: relative;
+    
+  }
+
+  .aboutcont h2{
+    font-family: "lato";
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  .aboutcont h1{
+    font-size: 3rem;
+    font-family: "lato";
+    color: #71b244;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  .aboutcont p{
+    margin: 10px 10rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "lato";
+    margin-bottom: 6rem;
+  }
+  @media (max-width:768px) {
+    .aboutcont p{
+        margin: 4rem 1rem;
+    }
+    .aboutcont p{
+      text-align: justify;
+    }
+    
+  }
+  .aboutcont h6{
+    color: #71b244;
+    font-family: "lato";
+    font-size: 1.2rem;
+    transition: 1s ease-in-out;
+    
+  }
+  .arrow2{
+    font-size: 1.4rem;
+    transition: 1s ease-in-out;
+  }
+ 
+  .aboutcont h6:hover .arrow2{
+    color: white;
+    font-family: "lato";
+   transform: translateX(50px);
+   transition: 1s ease-in-out;
+    
+  }
+  .aboutcont h6:hover{
+    color: white;
+    transform: translateX(-10px);
+    transition: 1s ease-in-out;
+   
+  }
+
+  .roboimg2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+   left: 0;
+   color: #71b244;
+   margin-left: 20px;
+   animation: upDownAnimation;
+   animation-duration: 3s;
+   animation-iteration-count:infinite;
+   animation-direction: alternate;
+   
+}
+
+/* course home stars here */
+
+#coursehome{
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    
+    background-color:#1a1a1b;
+  }
+
+ 
+  .coursecard{
+    /* background-color: #ff6a00; */
+   
+    width: 33%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    
+  
+
+  }
+  .coursecard p{
+    margin: 0px 0px;
+    font-size: 1.2rem;
+  }
+  .coursecard li{
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .cardcont{
+    background-color: #71b244;
+    width: 90%;
+    height: 350px;
+    transition: 1s ease-in-out;
+    padding: 10px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+  
+  } 
+  .cardcont:hover{
+  
+    background-color: white;
+    transition: 1s ease-in-out;
+  
+
+  }
+  .cardcont:hover h1{
+    color: #71b244;
+    transition: .5s ease-in-out;
+  
+  }
+  .cardcont:hover li{
+    color: #71b244;
+  }
+  .cardcont:hover p{
+    color: #71b244;
+    transition: .5s ease-in-out;
+  
+  }
+  .cardcont h1{
+    font-family: "roboto";
+    font-size: 2rem;
+  }
+  .cardcont h1{
+    color: white;
+  }
+  
+  
+
+  .coursesub{
+    color:#71b244;
+    font-family: "lato";
+    font-size: 1.2rem;
+    transition: 1s ease-in-out;
+   
+  }
+
+  .roboimg3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    animation: upDownAnimation;
+    animation-duration: 3s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+   
+}
+@media (max-width:800px) {
+  
+  .coursecard p{
+    font-size: 1rem;
+  }
+  .cardcont h1{
+    font-size: 1.5rem;
+  }
+}
+/* gallery starts here */
+
+
+/* team starts from here */
+#teamhome{
+  overflow:hidden;
+}
+
+.teamcard{
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+
+
+}
+.team1{
+  background-color: #71b244;
+  width: 90%;
+  height: 320px;
+  transition: 1s ease-in-out;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+ overflow: hidden;
+
+}
+
+.team1:hover .teamimg{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  border: 2px solid white;
+  margin-bottom: 25px;
+}
+.teamimg{
+  width: 200px;
+  height: 200px;
+  border-radius:10px;
+  border: 2px solid white;
+  margin-bottom: 25px;
+  transition: 1s ease-in-out;
+  object-fit: cover;
+}
+.teamicon{
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.iconteam{
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.team1 h3{
+  color: #1a1a1b;
+  font-size: 18px;
+  font-family: "poppins";
+}
+.team1 h5{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.team1 p{
+  font-size: .8rem;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.member{
+  background-color: #ff6a00;
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 2rem;
+ 
+  
+}
+
+
+
+.member a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.member:hover .teamimg{
+ height: 320px;
+ transition: .5s ease-in-out;
+
+}
+.member:hover h3{
+
+  transform: translateY(-50%);
+  transition: 1s ease-in-out;
+}
+
+.member:hover h5{
+ 
+  
+  transition: .8s ease-in-out;
+  color:white;
+  z-index: 1;
+}
+
+.teamhead{
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+}
+.teamhead h2{
+  font-family: "lato";
+  font-size: 2rem;
+  color: white;
+  
+}
+@media (max-width:768px) {
+  #teamhome{
+    overflow:hidden;
+  }
+  .teamcard{
+    padding-bottom: 5rem;
+  }
+  #home{
+    overflow: hidden;
+  }
+  .member{
+    margin-bottom: 1rem;
+  }
+  .coursecard{
+    width: 100%;
+
+  }
+  
+}
+
+
+/* contact starts here */
+
+
+#contact{
+  padding-bottom: 3rem;
+
+}
+
+.conticon{
+  width: 33%;
+  padding-bottom: 3rem;
+
+}
+.conticon1{
+  display: flex;
+  padding-bottom: 2rem;
+}
+.iconcont{
+  background-color: #71b244;
+  text-align: center;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.conticon1 .icon{
+  color: #1a1a1b;
+}
+.continfo{
+  height: 50px;
+  margin-left: 10px;
+  
+  
+}
+.continfo h2{
+  color: white;
+  margin-bottom: 0;
+  font-family: "lato";
+
+}
+.continfo p{
+  margin-top: 0;
+  color: white;
+  font-family: "lato";
+}
+
+
+
+.contform label{
+  color: white;
+}
+.form-control{
+  color: #71b244;
+}
+
+
+
+@media (max-width:768px) {
+  .newmov{
+    width: 90%;
+  }
+  .conticon{
+    width: 100%;
+  }
+  .newsmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .newsmore h5{
+    margin-top: 0px;
+  }
+  .newscont h5{
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .homehead{
+    padding-top: 2rem;
+  padding-bottom: 2rem;
+  }
+  .homecont{
+    margin-bottom: 180px;
+  }
+  .homecircle{
+    width: 250px;
+    height: 250px;
+  }
+}

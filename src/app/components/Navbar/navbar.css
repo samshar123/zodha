@@ -1,0 +1,71 @@
+.navbarsection{
+    padding-bottom: 8rem;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  
+
+    
+
+}
+.navbar-expand-lg {
+    padding-bottom: 1rem;
+}
+
+
+.navbarsection.scrolled .transparent {
+    background-color: rgb(41, 41, 41); /* Change to the desired background color */
+  }
+  
+.navimg{
+    width: 80px;
+    height: 50px;
+}
+.navbar button{
+color: transparent;
+    
+}
+
+.nav-item{
+    padding: 0px 18px;
+
+}
+.nav-item a{
+    color: white;
+    font-family: "roboto";
+    font-size: 1.2rem
+}
+
+.nav-item a:hover{
+    color: #71b244;
+}
+@media (max-width:768px) {
+    .nav-item a{
+        color: white;
+        font-family: "roboto";
+        font-size: 3rem
+    }
+    .collapse-content{
+        background-color:#71b244;
+        min-height: 100vh;
+        padding-top: 2rem;
+       
+    
+    }
+    
+    
+}
+/* .collapse{
+    background-color: #ff6a00;
+    border-radius: 40px;
+   
+
+} */
+.collapse-content{
+  
+    border-radius: 30px;
+   
+    text-align: center;
+    
+
+}
