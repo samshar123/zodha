@@ -60,7 +60,7 @@ export default function Navbar() {
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink  onClick={() => setOpenBasic(!openBasic)} href="#service">Service</MDBNavbarLink>
+                <MDBNavbarLink  onClick={() => setOpenBasic(!openBasic)} href="#service">Services</MDBNavbarLink>
               </MDBNavbarItem>
              
               <MDBNavbarItem>

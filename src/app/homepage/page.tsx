@@ -65,7 +65,7 @@ export default function home() {
         flicker={false}
       />
 
-      <Link href={"#home"}>
+      <Link href={"https://wa.me/8136950619"}>
         <FaSquareWhatsapp className={styles.whatslogo} />{" "}
       </Link>
       <Link href={"#home"} id="scrollUpLink" style={{ display: "none" }}>
@@ -83,7 +83,7 @@ export default function home() {
         <div className={styles.mainlogodiv}>
           <Image className={styles.mainlogo} src={img2} alt="" />
           <h5>
-            empowers organizations and individuals with innovative,
+            Empowers organizations and individuals with innovative,
             research-driven solutions tailored to address complex challenges.
             Discover actionable insights and achieve sustainable growth with our
             precision and expertise.
@@ -342,7 +342,7 @@ export default function home() {
                 <div className={styles.team1}>
                   <Image src={team6} className={styles.teamimg} alt="" />
                   <h3>Dr.MUBARAK RAHMAN</h3>
-                  <h5> Senior Researcher</h5>
+                  <h5>Research Executive</h5>
                   <p>Assistant Proffesor,LEAD College Palakkad</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
@@ -355,7 +355,7 @@ export default function home() {
                 <div className={styles.team1}>
                   <Image src={team7} className={styles.teamimg} alt="" />
                   <h3>YUSAF HARUN K</h3>
-                  <h5>Senior Researcher</h5>
+                  <h5>Research Executive</h5>
                   <p>Assistant Proffesor,Kalasalingam University</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
@@ -368,7 +368,7 @@ export default function home() {
                 <div className={styles.team1}>
                   <Image src={team8} className={styles.teamimg} alt="" />
                   <h3>Dr.MUHAMMED IRSHAD VK</h3>
-                  <h5>Senior Researcher</h5>
+                  <h5>Research Executive</h5>
                   <p>Assistant Proffesor,LEAD College Palakkad</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
@@ -381,7 +381,7 @@ export default function home() {
                 <div className={styles.team1}>
                   <Image src={team9} className={styles.teamimg} alt="" />
                   <h3>MOHAMED ALI KUNIPARAMBIL</h3>
-                  <h5>Executive Member</h5>
+                  <h5>Research Executive</h5>
                   <p>Senior Research Fellow, Pondichery University </p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
@@ -394,7 +394,7 @@ export default function home() {
                 <div className={styles.team1}>
                   <Image src={team10} className={styles.teamimg} alt="" />
                   <h3>Namshad</h3>
-                  <h5>Research executive</h5>
+                  <h5>Research Executive</h5>
                   <p>Senior Research Fellow, Pondichery University </p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
@@ -448,7 +448,7 @@ export default function home() {
       <section id="contact">
         <div id={styles.contact}>
           <div className={styles.teamhead}>
-            <h2>contact Us</h2>
+            <h2>Contact Us</h2>
             <h5 className={styles.coursesub}>Reach us</h5>
           </div>
           <div className="container">

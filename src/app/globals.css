@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 body{
   background-color: #1a1a1b;
 }
-
+*{
+  font-family: "Outfit", sans-serif;
+}
 .form-control {
     display: block;
     width: 100%;
@@ -47,7 +50,7 @@ body{
     opacity: .5;
 }
 
-a{
+body a{
   text-decoration: none ;
 }
 /* layout styling */
