@@ -34,8 +34,8 @@ import team8 from "../../../public/irshad.jpg";
 import team9 from "../../../public/ali.jpg";
 import team10 from "../../../public/team10.jpg";
 import team11 from "../../../public/team11.jpg";
-import team12 from "../../../public/team12.jpg"
-import team13 from "../../../public/team13.jpg"
+import team12 from "../../../public/team12.jpg";
+import team13 from "../../../public/team13.jpg";
 
 function scrollFunction(): void {
   const scrollUpLink = document.getElementById("scrollUpLink");
@@ -178,7 +178,9 @@ export default function home() {
                 </div>
                 <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
                   <div className={styles.cardcont}>
-                    <h1 style={{marginBottom:"12px"}}>Action research programs</h1>
+                    <h1 style={{ marginBottom: "12px" }}>
+                      Action research programs
+                    </h1>
                     <p>
                       Conducting Action research based on the problems faced by
                       the organizations, education institutions, Non-Government
@@ -191,20 +193,19 @@ export default function home() {
                 <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
                   <div className={styles.cardcont}>
                     <ul>
-                        <h1>Training programs</h1>
-                    <li>Training on stock market trading & investment practices</li>
-                    <li>Training and development program for employees</li>
-
+                      <h1>Training programs</h1>
+                      <li>
+                        Training on stock market trading & investment practices
+                      </li>
+                      <li>Training and development program for employees</li>
                     </ul>
-                  
                   </div>
                 </div>
                 <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
                   <div className={styles.cardcont}>
                     <h1>Hands on workshops</h1>
                     <p>
-                    workshops on Data analysis using IBM SPSS, Stata,
-                      R etc.
+                      workshops on Data analysis using IBM SPSS, Stata, R etc.
                     </p>
                   </div>
                 </div>
@@ -276,7 +277,7 @@ export default function home() {
                   <h3>Dr.SUHAIL PULPARAMBIL</h3>
                   <h5>Director of Research</h5>
                   <p>
-                    Assistant Proffesor on contract,Sullamussalam Science
+                    Assistant Professor on contract,Sullamussalam Science
                     College
                   </p>
                   <div className={styles.teamicon}>
@@ -333,7 +334,7 @@ export default function home() {
                   <h5>Project Manager</h5>
                   <p>
                     {" "}
-                    Assistant Proffesor on contract,Sullamussalam Science
+                    Assistant Professor on contract,Sullamussalam Science
                     College
                   </p>
                   <div className={styles.teamicon}>
@@ -348,7 +349,7 @@ export default function home() {
                   <Image src={team6} className={styles.teamimg} alt="" />
                   <h3>Dr.MUBARAK RAHMAN</h3>
                   <h5>Research Executive</h5>
-                  <p>Assistant Proffesor,LEAD College Palakkad</p>
+                  <p>Assistant Professor,LEAD College Palakkad</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -361,7 +362,7 @@ export default function home() {
                   <Image src={team7} className={styles.teamimg} alt="" />
                   <h3>YUSAF HARUN K</h3>
                   <h5>Research Executive</h5>
-                  <p>Assistant Proffesor,Kalasalingam University</p>
+                  <p>Assistant Professor,Kalasalingam University</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -374,7 +375,7 @@ export default function home() {
                   <Image src={team8} className={styles.teamimg} alt="" />
                   <h3>Dr.MUHAMMED IRSHAD VK</h3>
                   <h5>Research Executive</h5>
-                  <p>Assistant Proffesor,LEAD College Palakkad</p>
+                  <p>Assistant Professor,LEAD College Palakkad</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />

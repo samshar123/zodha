@@ -338,7 +338,7 @@ export default function home() {
                   <h3>Dr.SUHAIL PULPARAMBIL</h3>
                   <h5>Director of Research</h5>
                   <p>
-                    Assistant Proffesor on contract,Sullamussalam Science
+                    Assistant Professor on contract,Sullamussalam Science
                     College
                   </p>
                   <div className={styles.teamicon}>
@@ -395,7 +395,7 @@ export default function home() {
                   <h5>Project Manager</h5>
                   <p>
                     {" "}
-                    Assistant Proffesor on contract,Sullamussalam Science
+                    Assistant Professor on contract,Sullamussalam Science
                     College
                   </p>
                   <div className={styles.teamicon}>
@@ -410,7 +410,7 @@ export default function home() {
                   <Image src={team6} className={styles.teamimg} alt="" />
                   <h3>Dr.MUBARAK RAHMAN</h3>
                   <h5> Senior Researcher</h5>
-                  <p>Assistant Proffesor,LEAD College Palakkad</p>
+                  <p>Assistant Professor,LEAD College Palakkad</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -423,7 +423,7 @@ export default function home() {
                   <Image src={team7} className={styles.teamimg} alt="" />
                   <h3>YUSAF HARUN K</h3>
                   <h5>Senior Researcher</h5>
-                  <p>Assistant Proffesor,Kalasalingam University</p>
+                  <p>Assistant Professor,Kalasalingam University</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -436,7 +436,7 @@ export default function home() {
                   <Image src={team8} className={styles.teamimg} alt="" />
                   <h3>Dr.MUHAMMED IRSHAD VK</h3>
                   <h5>Senior Researcher</h5>
-                  <p>Assistant Proffesor,LEAD College Palakkad</p>
+                  <p>Assistant Professor,LEAD College Palakkad</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
