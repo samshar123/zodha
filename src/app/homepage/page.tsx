@@ -190,10 +190,13 @@ export default function home() {
                 </div>
                 <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
                   <div className={styles.cardcont}>
-                    <h1>Training programs</h1>
-                    <p>
-                      Training on stock market trading & investment practices
-                    </p>
+                    <ul>
+                        <h1>Training programs</h1>
+                    <li>Training on stock market trading & investment practices</li>
+                    <li>Training and development program for employees</li>
+
+                    </ul>
+                  
                   </div>
                 </div>
                 <div className={`col-lg-4 col-12 ${styles.coursecard}`}>

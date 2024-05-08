@@ -20,11 +20,12 @@
 .footericons{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 .footericon{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     color: #71b244;
 }
 .iconsfooter{
