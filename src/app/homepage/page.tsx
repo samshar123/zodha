@@ -34,6 +34,8 @@ import team8 from "../../../public/irshad.jpg";
 import team9 from "../../../public/ali.jpg";
 import team10 from "../../../public/team10.jpg";
 import team11 from "../../../public/team11.jpg";
+import team12 from "../../../public/team12.jpg"
+import team13 from "../../../public/team13.jpg"
 
 function scrollFunction(): void {
   const scrollUpLink = document.getElementById("scrollUpLink");
@@ -267,7 +269,7 @@ export default function home() {
             <div className="row">
               <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
                 <div className={styles.team1}>
-                  <Image src={team2} className={styles.teamimg} alt="" />
+                  <Image src={team12} className={styles.teamimg} alt="" />
                   <h3>Dr.SUHAIL PULPARAMBIL</h3>
                   <h5>Director of Research</h5>
                   <p>
@@ -296,7 +298,7 @@ export default function home() {
               </div>
               <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
                 <div className={styles.team1}>
-                  <Image src={team4} className={styles.teamimg} alt="" />
+                  <Image src={team13} className={styles.teamimg} alt="" />
                   <h3>FATHIMA ISRA</h3>
                   <h5>Head, Behavioral Research</h5>
                   <p>CEO,Kindled Psychology Services </p>
