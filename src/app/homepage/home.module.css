@@ -640,6 +640,47 @@ animation-direction: alternate;
 }
 
 
+/* gallery page */
+
+#galleryhome {
+  padding-bottom: 2rem;
+}
+
+
+.galleryhead{
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+.galleryhead h2{
+  font-family: "lato";
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.imgcard{
+  width: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.imgcard img{
+  transition: 1s ease-in-out;
+  overflow: hidden;
+  object-fit: cover;
+  
+}
+.imgcard img:hover{
+  transform: scale(110%);
+  transition: 1s ease-in-out;
+ 
+
+
+}
 
 @media (max-width:768px) {
   .newmov{

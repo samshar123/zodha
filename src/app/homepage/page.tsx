@@ -36,6 +36,12 @@ import team10 from "../../../public/team10.jpg";
 import team11 from "../../../public/team11.jpg";
 import team12 from "../../../public/team12.jpg";
 import team13 from "../../../public/team13.jpg";
+import gal1 from "../../../public/gal1.jpg";
+import gal2 from "../../../public/gal2.jpg";
+import gal3 from "../../../public/gal3.jpg";
+import gal4 from "../../../public/gal4.jpg";
+import gal5 from "../../../public/gal5.jpg";
+import gal6 from "../../../public/gal6.jpg";
 
 function scrollFunction(): void {
   const scrollUpLink = document.getElementById("scrollUpLink");
@@ -50,6 +56,13 @@ function scrollFunction(): void {
     }
   }
 }
+
+const images = [
+  'https://via.placeholder.com/300',
+  'https://via.placeholder.com/300',
+  'https://via.placeholder.com/300',
+  'https://via.placeholder.com/300',
+];
 
 export default function home() {
   // window.onscroll = function () {
@@ -263,6 +276,77 @@ export default function home() {
         </div>
       </section>
 
+      < section id = "gallery1" >
+      <div id={ styles.galleryhome }>
+        <div className="container" >
+          <div className={ styles.galleryhead }>
+            <h2>Gallery </h2>
+            < h5 className = { styles.coursesub } > Our Valuable moments </h5>
+              </div>
+              < div className = "row" >
+                <div className="col-lg-4 col-md-12 mb-4 mb-lg-0" >
+                  <div className={ styles.imgcard }>
+                    <Image
+                    src={gal1}
+alt = "Boat on Calm Water"
+width = { 600}
+height = { 400}
+  />
+  </div>
+
+  < div className = {styles.imgcard} >
+    <Image  src={gal2}
+alt = "Wintry Mountain Landscape"
+width = { 600}
+height = { 400}
+  />
+  </div>
+  </div>
+
+  < div className = "col-lg-4 mb-4 mb-lg-0" >
+    <div className={ styles.imgcard }>
+      <Image
+                    src={gal3}
+alt = "Mountains in the Clouds"
+width = { 600}
+height = { 400}
+  />
+  </div>
+
+  < div className = { styles.imgcard } >
+    <Image
+                    src={gal4}
+alt = "Boat on Calm Water"
+width = { 600}
+height = { 400}
+  />
+  </div>
+  </div>
+
+  <div className= "col-lg-4 mb-4 mb-lg-0" >
+    <div className={ styles.imgcard }>
+      <Image
+                    src={gal5}
+alt = "Waves at Sea"
+width = { 600}
+height = { 400}
+  />
+  </div>
+
+  < div className = { styles.imgcard } >
+    <Image
+                    className={ styles.imggal }
+src = {gal2}
+alt = "Yosemite National Park"
+width = { 600}
+height = { 400}
+  />
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
       <section id="team">
         <div id={styles.teamhome}>
           <div className={styles.teamhead}>
