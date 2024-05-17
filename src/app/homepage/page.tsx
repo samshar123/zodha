@@ -38,10 +38,11 @@ import team12 from "../../../public/team12.jpg";
 import team13 from "../../../public/team13.jpg";
 import gal1 from "../../../public/gal1.jpg";
 import gal2 from "../../../public/gal2.jpg";
-import gal3 from "../../../public/gal3.jpg";
+import gal3 from "../../../public/gal7.jpg";
 import gal4 from "../../../public/gal4.jpg";
 import gal5 from "../../../public/gal5.jpg";
-import gal6 from "../../../public/gal6.jpg";
+import gal6 from "../../../public/gal8.jpg";
+import gal10 from "../../../public/gal10.jpg"
 
 function scrollFunction(): void {
   const scrollUpLink = document.getElementById("scrollUpLink");
@@ -336,7 +337,7 @@ height = { 400}
   < div className = { styles.imgcard } >
     <Image
                     className={ styles.imggal }
-src = {gal2}
+src = {gal10}
 alt = "Yosemite National Park"
 width = { 600}
 height = { 400}
