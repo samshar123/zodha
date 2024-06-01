@@ -76,7 +76,7 @@ transition: 1s ease-in-out;
   font-family: "poppins";
   color: #71b244;
 }
-.mainlogodiv button{
+.mainlogodiv .aboutbnt{
   background-color: #71b244;
   color: white;
   border: none;
@@ -160,6 +160,16 @@ animation-direction: alternate;
   animation-duration: 3s;
 animation-iteration-count:infinite;
 animation-direction: alternate;
+}
+
+.btnnews{
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  margin-top: 50px;
+  border: 1px solid #71b244 ;
 }
 @media (max-width:768px) 
 {

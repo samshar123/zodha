@@ -109,12 +109,23 @@ export default function home() {
             {" "}
             <a href="#about">
               {" "}
-              <button>
+              <button className={styles.aboutbnt}>
                 About us
                 <FaLongArrowAltRight />
               </button>
             </a>
           </a>
+          <br />
+
+          <button className={styles.btnnews}>
+            <a href="https://forms.gle/NKU6EqgTzhnuZdYJA" target="_blank">
+              Event Registration : BASICS OF ACADEMIC RESEARCH
+              </a>
+              </button>
+
+
+
+          
         </div>
       </section>
       <section id="about">
