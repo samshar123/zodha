@@ -42,7 +42,7 @@ import gal3 from "../../../public/gal7.jpg";
 import gal4 from "../../../public/gal4.jpg";
 import gal5 from "../../../public/gal5.jpg";
 import gal6 from "../../../public/gal8.jpg";
-import gal10 from "../../../public/gal10.jpg"
+import gal10 from "../../../public/gal10.jpg";
 
 function scrollFunction(): void {
   const scrollUpLink = document.getElementById("scrollUpLink");
@@ -59,10 +59,10 @@ function scrollFunction(): void {
 }
 
 const images = [
-  'https://via.placeholder.com/300',
-  'https://via.placeholder.com/300',
-  'https://via.placeholder.com/300',
-  'https://via.placeholder.com/300',
+  "https://via.placeholder.com/300",
+  "https://via.placeholder.com/300",
+  "https://via.placeholder.com/300",
+  "https://via.placeholder.com/300",
 ];
 
 export default function home() {
@@ -120,12 +120,8 @@ export default function home() {
           <button className={styles.btnnews}>
             <a href="https://forms.gle/NKU6EqgTzhnuZdYJA" target="_blank">
               Event Registration : BASICS OF ACADEMIC RESEARCH
-              </a>
-              </button>
-
-
-
-          
+            </a>
+          </button>
         </div>
       </section>
       <section id="about">
@@ -288,77 +284,78 @@ export default function home() {
         </div>
       </section>
 
-      < section id = "gallery1" >
-      <div id={ styles.galleryhome }>
-        <div className="container" >
-          <div className={ styles.galleryhead }>
-            <h2>Gallery </h2>
-            < h5 className = { styles.coursesub } > Our Valuable moments </h5>
-              </div>
-              < div className = "row" >
-                <div className="col-lg-4 col-md-12 mb-4 mb-lg-0" >
-                  <div className={ styles.imgcard }>
-                    <Image
+      <section id="gallery1">
+        <div id={styles.galleryhome}>
+          <div className="container">
+            <div className={styles.galleryhead}>
+              <h2>Gallery </h2>
+              <h5 className={styles.coursesub}> Our Valuable moments </h5>
+            </div>
+            <div className="row">
+              <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div className={styles.imgcard}>
+                  <Image
                     src={gal1}
-alt = "Boat on Calm Water"
-width = { 600}
-height = { 400}
-  />
-  </div>
+                    alt="Boat on Calm Water"
+                    width={600}
+                    height={400}
+                  />
+                </div>
 
-  < div className = {styles.imgcard} >
-    <Image  src={gal2}
-alt = "Wintry Mountain Landscape"
-width = { 600}
-height = { 400}
-  />
-  </div>
-  </div>
+                <div className={styles.imgcard}>
+                  <Image
+                    src={gal2}
+                    alt="Wintry Mountain Landscape"
+                    width={600}
+                    height={400}
+                  />
+                </div>
+              </div>
 
-  < div className = "col-lg-4 mb-4 mb-lg-0" >
-    <div className={ styles.imgcard }>
-      <Image
+              <div className="col-lg-4 mb-4 mb-lg-0">
+                <div className={styles.imgcard}>
+                  <Image
                     src={gal3}
-alt = "Mountains in the Clouds"
-width = { 600}
-height = { 400}
-  />
-  </div>
+                    alt="Mountains in the Clouds"
+                    width={600}
+                    height={400}
+                  />
+                </div>
 
-  < div className = { styles.imgcard } >
-    <Image
+                <div className={styles.imgcard}>
+                  <Image
                     src={gal4}
-alt = "Boat on Calm Water"
-width = { 600}
-height = { 400}
-  />
-  </div>
-  </div>
+                    alt="Boat on Calm Water"
+                    width={600}
+                    height={400}
+                  />
+                </div>
+              </div>
 
-  <div className= "col-lg-4 mb-4 mb-lg-0" >
-    <div className={ styles.imgcard }>
-      <Image
+              <div className="col-lg-4 mb-4 mb-lg-0">
+                <div className={styles.imgcard}>
+                  <Image
                     src={gal5}
-alt = "Waves at Sea"
-width = { 600}
-height = { 400}
-  />
-  </div>
+                    alt="Waves at Sea"
+                    width={600}
+                    height={400}
+                  />
+                </div>
 
-  < div className = { styles.imgcard } >
-    <Image
-                    className={ styles.imggal }
-src = {gal10}
-alt = "Yosemite National Park"
-width = { 600}
-height = { 400}
-  />
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
+                <div className={styles.imgcard}>
+                  <Image
+                    className={styles.imggal}
+                    src={gal10}
+                    alt="Yosemite National Park"
+                    width={600}
+                    height={400}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="team">
         <div id={styles.teamhome}>
           <div className={styles.teamhead}>
@@ -386,7 +383,7 @@ height = { 400}
               <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
                 <div className={styles.team1}>
                   <Image src={team3} className={styles.teamimg} alt="" />
-                  <h3>NIYAS N</h3>
+                  <h3>Dr.NIYAS N</h3>
                   <h5>Director of Research</h5>
                   <p>Senior Research Fellow, Pondichery University </p>
                   <div className={styles.teamicon}>
@@ -456,7 +453,7 @@ height = { 400}
               <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
                 <div className={styles.team1}>
                   <Image src={team7} className={styles.teamimg} alt="" />
-                  <h3>YUSAF HARUN K</h3>
+                  <h3>Dr.YUSAF HARUN K</h3>
                   <h5>Research Executive</h5>
                   <p>Assistant Professor,Kalasalingam University</p>
                   <div className={styles.teamicon}>
