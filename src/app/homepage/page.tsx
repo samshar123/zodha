@@ -24,6 +24,7 @@ import { PiMedal } from "react-icons/pi";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
+import Publications from "../Publications/page";
 import team2 from "../../../public/suhail.jpg";
 import team3 from "../../../public/niyas.jpg";
 import team4 from "../../../public/isra.jpg";
@@ -282,6 +283,10 @@ export default function home() {
             <TbTargetArrow className={styles.roboimg3} />
           </div>
         </div>
+      </section>
+      <section>
+        <Publications></Publications>
+
       </section>
 
       <section id="gallery1">
