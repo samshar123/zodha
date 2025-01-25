@@ -284,7 +284,7 @@ export default function home() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="publications">
         <Publications></Publications>
 
       </section>
