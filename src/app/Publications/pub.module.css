@@ -50,7 +50,7 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-.pubcardmain Image{
+.pubcardmain .pubimg{
    object-fit: cover;
    width: 100%;
 }
