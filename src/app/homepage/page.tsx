@@ -220,6 +220,11 @@ export default function home() {
                         Training on stock market trading & investment practices
                       </li>
                       <li>Training and development program for employees</li>
+                      <li>
+                        Develop skills and foster growth through tailored
+                        programs designed for your organization's unique
+                        requirements.
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -234,48 +239,17 @@ export default function home() {
                 <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
                   <div className={styles.cardcont}>
                     <h1>Psychological Assessments</h1>
-                    <p>
-                      Gain insights into individual and group dynamics to
-                      identify strengths and areas for improvement.
-                    </p>
-                  </div>
-                </div>
-                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
-                  <div className={styles.cardcont}>
-                    <h1>Customized Training and Workshops</h1>
-                    <p>
-                      Develop skills and foster growth through tailored programs
-                      designed for your organization's unique requirements.{" "}
-                    </p>
-                  </div>
-                </div>
-                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
-                  <div className={styles.cardcont}>
-                    <h1>Organizational Development </h1>
-                    <p>
-                      Cultivate a positive work or learning environment with
-                      guidance on leadership, culture, team dynamics, and
-                      motivation.{" "}
-                    </p>
-                  </div>
-                </div>
-                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
-                  <div className={styles.cardcont}>
-                    <h1>Policy Development </h1>
-                    <p>
-                      Create inclusive policies to support all members of your
-                      organization.{" "}
-                    </p>
-                  </div>
-                </div>
-                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
-                  <div className={styles.cardcont}>
-                    <h1>Consultation Services </h1>
-                    <p>
-                      Address specific challenges in mental health, employee
-                      relations, or organizational development through expert
-                      guidance.{" "}
-                    </p>
+                    <ul>
+                      <li>
+                        Gain insights into individual and group dynamics to
+                        identify strengths and areas for improvement.
+                      </li>
+                      <li>
+                        Address specific challenges in mental health, employee
+                        relations, or organizational development through expert
+                        guidance.{" "}
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -286,7 +260,6 @@ export default function home() {
       </section>
       <section id="publications">
         <Publications></Publications>
-
       </section>
 
       <section id="gallery1">
