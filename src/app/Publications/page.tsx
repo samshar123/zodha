@@ -1,3 +1,5 @@
+'use client';  // Add this at the top of the file
+
 import { useEffect, useState } from "react";
 import Styles from "./pub.module.css";
 import Image from "next/image";
@@ -22,7 +24,6 @@ export default function Publications() {
         setLoading(false);
       }
     };
-
     fetchPublications();
   }, []);
 
@@ -40,25 +41,24 @@ export default function Publications() {
         <div className={Styles.pubsub}>
           <div className="row">
             {publications
-              .filter((publication: any) => publication.pdf) // Only render items with a valid `pdf`
+              .filter((publication: any) => publication.pdf)
               .map((publication: any, index) => {
                 const imageUrl = publication.image
                   ? publication.image.startsWith("http")
                     ? publication.image
                     : `http://94.136.185.170:8700${publication.image}`
-                  : ""; // Fallback to placeholder
+                  : "";
                 const pdfUrl = publication.pdf.startsWith("http")
                   ? publication.pdf
                   : `http://94.136.185.170:8700${publication.pdf}`;
-
                 return (
                   <div key={index} className={`col-lg-3 col-12 ${Styles.pubm}`}>
                     <Link href={pdfUrl || "#"} target="_blank">
                       <div className={Styles.pubcardmain}>
-                        <Image className="pubimg"
+                        <Image 
+                          className="pubimg"
                           height={250}
                           width={200}
-                          
                           src={imageUrl}
                           alt={publication.title || "Publication"}
                         />
