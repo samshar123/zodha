@@ -1,6 +1,4 @@
-// page.tsx (SSR)
-
-import { GetServerSideProps } from 'next';
+// Server Component (Automatically SSR)
 import Styles from './pub.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,22 +9,23 @@ type Publication = {
   pdf: string;
 };
 
-interface PublicationsProps {
-  publications: Publication[];
-}
-
-export const getServerSideProps: GetServerSideProps = async () => {
+// Fetch data in a Server Component (No getServerSideProps needed)
+async function getPublications(): Promise<Publication[]> {
   try {
-    const response = await fetch('http://94.136.185.170:8700/api/publication/journal/');
-    const data = await response.json();
-    return { props: { publications: data || [] } };
+    const response = await fetch('http://94.136.185.170:8700/api/publication/journal/', {
+      cache: 'no-store', // Ensures fresh data on every request
+    });
+    if (!response.ok) throw new Error('Failed to fetch publications');
+    return await response.json();
   } catch (error) {
     console.error('Error fetching publications:', error);
-    return { props: { publications: [] } };
+    return [];
   }
-};
+}
 
-export default function Publications({ publications }: PublicationsProps) {
+export default async function Publications() {
+  const publications = await getPublications();
+
   return (
     <div className="container">
       <div className={Styles.pubmain}>
