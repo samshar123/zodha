@@ -4,7 +4,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["94.136.185.170"], // Add your external image domain here
+    domains: ["94.136.185.170", "teamdotco.com"], // Add your external image domain here
   },
 };
 
