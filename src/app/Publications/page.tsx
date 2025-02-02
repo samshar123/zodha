@@ -1,36 +1,32 @@
-'use client';  // Add this at the top of the file
+// page.tsx (SSR)
 
-import { useEffect, useState } from "react";
-import Styles from "./pub.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import { GetServerSideProps } from 'next';
+import Styles from './pub.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Publications() {
-  const [publications, setPublications] = useState([]);
-  const [loading, setLoading] = useState(true);
+type Publication = {
+  title: string;
+  image: string;
+  pdf: string;
+};
 
-  useEffect(() => {
-    const fetchPublications = async () => {
-      try {
-        const response = await fetch("http://94.136.185.170:8700/api/publication/journal/");
-        if (!response.ok) {
-          throw new Error("Failed to fetch publications");
-        }
-        const data = await response.json();
-        setPublications(data || []); // Ensure data is an array
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching publications:", error);
-        setLoading(false);
-      }
-    };
-    fetchPublications();
-  }, []);  
+interface PublicationsProps {
+  publications: Publication[];
+}
 
-  if (loading) {
-    return <p>Loading publications...</p>;
+export const getServerSideProps: GetServerSideProps = async () => {
+  try {
+    const response = await fetch('http://94.136.185.170:8700/api/publication/journal/');
+    const data = await response.json();
+    return { props: { publications: data || [] } };
+  } catch (error) {
+    console.error('Error fetching publications:', error);
+    return { props: { publications: [] } };
   }
+};
 
+export default function Publications({ publications }: PublicationsProps) {
   return (
     <div className="container">
       <div className={Styles.pubmain}>
@@ -41,13 +37,11 @@ export default function Publications() {
         <div className={Styles.pubsub}>
           <div className="row">
             {publications
-              .filter((publication: any) => publication.pdf)
-              .map((publication: any, index) => {
-                const imageUrl = publication.image
-                  ? publication.image.startsWith("http")
-                    ? publication.image
-                    : `http://94.136.185.170:8700${publication.image}`
-                  : "";
+              .filter((publication) => publication.pdf)
+              .map((publication, index) => {
+                const imageUrl = publication.image.startsWith("http")
+                  ? publication.image
+                  : `http://94.136.185.170:8700${publication.image}`;
                 const pdfUrl = publication.pdf.startsWith("http")
                   ? publication.pdf
                   : `http://94.136.185.170:8700${publication.pdf}`;
@@ -55,7 +49,7 @@ export default function Publications() {
                   <div key={index} className={`col-lg-3 col-12 ${Styles.pubm}`}>
                     <Link href={pdfUrl || "#"} target="_blank">
                       <div className={Styles.pubcardmain}>
-                        <Image 
+                        <Image
                           className="pubimg"
                           height={250}
                           width={200}
