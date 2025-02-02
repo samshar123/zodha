@@ -20,12 +20,12 @@ export default function Publications() {
         setPublications(data || []); // Ensure data is an array
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching publicationsss:", error);
+        console.error("Error fetching publications:", error);
         setLoading(false);
       }
     };
     fetchPublications();
-  }, []);
+  }, []);  
 
   if (loading) {
     return <p>Loading publications...</p>;
