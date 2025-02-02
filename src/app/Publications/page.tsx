@@ -1,30 +1,35 @@
-// Server Component (Automatically SSR)
-import Styles from './pub.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
+'use client';  // Add this at the top of the file
 
-type Publication = {
-  title: string;
-  image: string;
-  pdf: string;
-};
+import { useEffect, useState } from "react";
+import Styles from "./pub.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
-// Fetch data in a Server Component (No getServerSideProps needed)
-async function getPublications(): Promise<Publication[]> {
-  try {
-    const response = await fetch('http://94.136.185.170:8700/api/publication/journal/', {
-      cache: 'no-store', // Ensures fresh data on every request
-    });
-    if (!response.ok) throw new Error('Failed to fetch publications');
-    return await response.json();
-  } catch (error) {
-    console.error('Error fetching publications:', error);
-    return [];
+export default function Publications() {
+  const [publications, setPublications] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPublications = async () => {
+      try {
+        const response = await fetch("http://94.136.185.170:8700/api/publication/journal/");
+        if (!response.ok) {
+          throw new Error("Failed to fetch publications");
+        }
+        const data = await response.json();
+        setPublications(data || []); // Ensure data is an array
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching publicationsss:", error);
+        setLoading(false);
+      }
+    };
+    fetchPublications();
+  }, []);
+
+  if (loading) {
+    return <p>Loading publications...</p>;
   }
-}
-
-export default async function Publications() {
-  const publications = await getPublications();
 
   return (
     <div className="container">
@@ -36,11 +41,13 @@ export default async function Publications() {
         <div className={Styles.pubsub}>
           <div className="row">
             {publications
-              .filter((publication) => publication.pdf)
-              .map((publication, index) => {
-                const imageUrl = publication.image.startsWith("http")
-                  ? publication.image
-                  : `http://94.136.185.170:8700${publication.image}`;
+              .filter((publication: any) => publication.pdf)
+              .map((publication: any, index) => {
+                const imageUrl = publication.image
+                  ? publication.image.startsWith("http")
+                    ? publication.image
+                    : `http://94.136.185.170:8700${publication.image}`
+                  : "";
                 const pdfUrl = publication.pdf.startsWith("http")
                   ? publication.pdf
                   : `http://94.136.185.170:8700${publication.pdf}`;
@@ -48,7 +55,7 @@ export default async function Publications() {
                   <div key={index} className={`col-lg-3 col-12 ${Styles.pubm}`}>
                     <Link href={pdfUrl || "#"} target="_blank">
                       <div className={Styles.pubcardmain}>
-                        <Image
+                        <Image 
                           className="pubimg"
                           height={250}
                           width={200}
