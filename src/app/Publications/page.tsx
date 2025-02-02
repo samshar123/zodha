@@ -12,7 +12,7 @@ export default function Publications() {
   useEffect(() => {
     const fetchPublications = async () => {
       try {
-        const response = await fetch("http://94.136.185.170:8700/api/publication/journal/");
+        const response = await fetch("https://teamdotco.com/zodha-api/api/publication/journal/");
         if (!response.ok) {
           throw new Error("Failed to fetch publications");
         }
@@ -46,11 +46,11 @@ export default function Publications() {
                 const imageUrl = publication.image
                   ? publication.image.startsWith("http")
                     ? publication.image
-                    : `http://94.136.185.170:8700${publication.image}`
+                    : `https://teamdotco.com/zodha-api${publication.image}`
                   : "";
                 const pdfUrl = publication.pdf.startsWith("http")
                   ? publication.pdf
-                  : `http://94.136.185.170:8700${publication.pdf}`;
+                  : `https://teamdotco.com/zodha-api${publication.pdf}`;
                 return (
                   <div key={index} className={`col-lg-3 col-12 ${Styles.pubm}`}>
                     <Link href={pdfUrl || "#"} target="_blank">
