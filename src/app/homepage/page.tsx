@@ -180,6 +180,7 @@ export default function home() {
                       </li>
                       <li>Higher education and PhD orientation programs</li>
                       <li>Academic project writing for UG & PG students</li>
+                      <li> workshops on Data analysis using IBM SPSS, Stata, R etc.</li>
                     </ul>
                   </div>
                 </div>
@@ -228,14 +229,7 @@ export default function home() {
                     </ul>
                   </div>
                 </div>
-                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
-                  <div className={styles.cardcont}>
-                    <h1>Hands on workshops</h1>
-                    <p>
-                      workshops on Data analysis using IBM SPSS, Stata, R etc.
-                    </p>
-                  </div>
-                </div>
+              
                 <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
                   <div className={styles.cardcont}>
                     <h1>Psychological Assessments</h1>
@@ -250,6 +244,46 @@ export default function home() {
                         guidance.{" "}
                       </li>
                     </ul>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Publication Services</h1>
+                   <ul>
+                    <li>Book Chapter Publications</li>
+                    <li>Special Issue Services</li>
+                    <li>Guidelines to quality journel publications</li>
+                   </ul>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Research Assistance</h1>
+                   <ul>
+                    <li>Training on Proposal, Synopsis, Viva Presentations</li>
+                    <li>Data Vending Services</li>
+                    <li>Guidance to the Publications</li>
+                   </ul>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Industrial Research</h1>
+                   <ul>
+                    <li>Market Research Programes (Customer feedback assessment using standardized tools)</li>
+                    <li></li>
+                    <li>Brand Valuation (For existing & Startup Businesses)</li>
+                   </ul>
+                  </div>
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <div className={styles.cardcont}>
+                    <h1>Internship & Training opportunities</h1>
+                   <ul>
+                    <li>Startup Intership Programme for the Data Management</li>
+                    <li></li>
+                    <li>Construction training programes (Psychology)</li>
+                   </ul>
                   </div>
                 </div>
               </div>
@@ -347,10 +381,9 @@ export default function home() {
                   <Image src={team12} className={styles.teamimg} alt="" />
                   <h3>Dr.SUHAIL PULPARAMBIL</h3>
                   <h5>Director of Research</h5>
-                  <p>
-                    Assistant Professor on contract,Sullamussalam Science
-                    College
-                  </p>
+                  <br />
+                  <br />
+               
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -363,7 +396,8 @@ export default function home() {
                   <Image src={team3} className={styles.teamimg} alt="" />
                   <h3>Dr.NIYAS N</h3>
                   <h5>Director of Research</h5>
-                  <p>Senior Research Fellow, Pondichery University </p>
+                  <br />
+                
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -403,11 +437,8 @@ export default function home() {
                   <Image src={team11} className={styles.teamimg} alt="" />
                   <h3>ABIDA ABDULLA</h3>
                   <h5>Project Manager</h5>
-                  <p>
-                    {" "}
-                    Assistant Professor on contract,Sullamussalam Science
-                    College
-                  </p>
+                  <br />
+
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -420,7 +451,7 @@ export default function home() {
                   <Image src={team6} className={styles.teamimg} alt="" />
                   <h3>Dr.MUBARAK RAHMAN</h3>
                   <h5>Research Executive</h5>
-                  <p>Assistant Professor,LEAD College Palakkad</p>
+                  <p>Assistant Professor, PMA SAFI Institute, Vazhayar</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -433,7 +464,7 @@ export default function home() {
                   <Image src={team7} className={styles.teamimg} alt="" />
                   <h3>Dr.YUSAF HARUN K</h3>
                   <h5>Research Executive</h5>
-                  <p>Assistant Professor,Kalasalingam University</p>
+                  <p>Assistant Professor, Presidency University, Bengaluru</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -459,7 +490,7 @@ export default function home() {
                   <Image src={team9} className={styles.teamimg} alt="" />
                   <h3>MOHAMED ALI KUNIPARAMBIL</h3>
                   <h5>Research Executive</h5>
-                  <p>Senior Research Fellow, Pondichery University </p>
+                  <p>Assistant Professor, Presidency University, Bengaluru</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -473,6 +504,19 @@ export default function home() {
                   <h3>NAMSHAD P</h3>
                   <h5>Research Executive</h5>
                   <p>Senior Research Fellow, Pondichery University </p>
+                  <div className={styles.teamicon}>
+                    <FaSquareFacebook className={styles.iconteam} />
+                    <BiLogoLinkedinSquare className={styles.iconteam} />
+                    <FaSquareInstagram className={styles.iconteam} />
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-3 col-12 ${styles.teamcard}`}>
+                <div className={styles.team1}>
+                  <Image src={""} className={styles.teamimg} alt="" />
+                  <h3>Dr. Vineeth P</h3>
+                  <h5>Research Executive</h5>
+                  <p>Assistant Professor, Christ University, Bengaluru</p>
                   <div className={styles.teamicon}>
                     <FaSquareFacebook className={styles.iconteam} />
                     <BiLogoLinkedinSquare className={styles.iconteam} />
@@ -539,7 +583,7 @@ export default function home() {
                   </div>
                   <div className={styles.continfo}>
                     <h2>Email</h2>
-                    <p>mail@zodharesearch.com</p>
+                    <p>zodharesearch@gmail.com</p>
                   </div>
                 </div>
                 <div className={styles.conticon1}>
@@ -550,7 +594,7 @@ export default function home() {
                   </div>
                   <div className={styles.continfo}>
                     <h2>Call</h2>
-                    <p>+91 9074305205</p>
+                    <p>+91 8136950619</p>
                   </div>
                 </div>
                 <div className={styles.conticon1}>
