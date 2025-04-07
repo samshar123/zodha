@@ -251,7 +251,7 @@ export default function home() {
                    <ul>
                     <li>Book Chapter Publications</li>
                     <li>Special Issue Services</li>
-                    <li>Guidelines to quality journel publications</li>
+                    <li>Guidelines to quality journal publications</li>
                    </ul>
                   </div>
                 </div>
@@ -279,7 +279,7 @@ export default function home() {
                     <h1>Internship & Training opportunities</h1>
                    <ul>
                     <li>Startup Intership Programme for the Data Management</li>
-                    <li>Construction training programes (Psychology)</li>
+                    <li>Consultation training programes (Psychology)</li>
                    </ul>
                   </div>
                 </div>
