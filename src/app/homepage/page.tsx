@@ -172,7 +172,6 @@ export default function home() {
                       Academic/Research sessions
                     </h1>
                     <ul>
-                      <li>Research methodology & Data analysis</li>
                       <li>Article writing & Publishing</li>
                       <li>Primary & Secondary data analysis</li>
                       <li>
@@ -271,7 +270,6 @@ export default function home() {
                     <h1>Industrial Research</h1>
                    <ul>
                     <li>Market Research Programes (Customer feedback assessment using standardized tools)</li>
-                    <li></li>
                     <li>Brand Valuation (For existing & Startup Businesses)</li>
                    </ul>
                   </div>
@@ -281,7 +279,6 @@ export default function home() {
                     <h1>Internship & Training opportunities</h1>
                    <ul>
                     <li>Startup Intership Programme for the Data Management</li>
-                    <li></li>
                     <li>Construction training programes (Psychology)</li>
                    </ul>
                   </div>
