@@ -179,7 +179,7 @@ export default function home() {
                       </li>
                       <li>Higher education and PhD orientation programs</li>
                       <li>Academic project writing for UG & PG students</li>
-                      <li> workshops on Data analysis using IBM SPSS, Stata, R etc.</li>
+                      <li> Workshops on Data analysis using IBM SPSS, Stata, R etc.</li>
                     </ul>
                   </div>
                 </div>
